@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homework 2 page 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      
+      fieldset {
+        background-color: rgba(0, 128, 0, 0.281) ;
+        text-align: center;
+      }
+      
+      form {
+        text-align: center;
+      }
+      .thesis {
+        margin-top: 16px;
+        text-align: right ;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/register.html" aria-current="page">Home</a>
+      <a href="/login.html" aria-current="page">Sign in</a>
+    </nav>
+    <main>
+     <h1>Sign up</h1>      
+    </main>
+    <form action="/login.html" id="Sign-up">
+      <p class="thesis">
+        Enter your email and another information to create or restart your
+        membership
+      </p>
+      <fieldset>
+        <input required type="text" name="Firstname" placeholder="First name" />
+      </fieldset>
+      <fieldset>
+        <input required type="text" name="Surname" placeholder="Surname" />
+      </fieldset>
+      <fieldset>
+        <input required type="text" name="Username" placeholder="Username" />
+      </fieldset>
+      <fieldset>
+        <input
+          required
+          type="text"
+          inputmode="email"
+          name="Email"
+          placeholder="Email"
+        />
+      </fieldset>
+      <fieldset>
+        <input
+          type="phone"
+          inputmode="numeric"
+          name="Phone number"
+          placeholder="Phone number"
+        />
+      </fieldset>
+      <fieldset>
+        <input
+          required
+          type="text"
+          inputmode="password"
+          name="Password"
+          placeholder="Password"
+        />
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+        <label for="male"
+          ><input type="radio" id="male" name="gender" />Male</label
+        >
+        <label for="female"
+          ><input type="radio" id="female" name="gender" /> Female</label
+        >
+      </fieldset>
+      <fieldset>
+        <input
+          list="Nationality"
+          id="Nationality-choice"
+          name="Nationality-choice"
+        />
+        <datalist id="Nationality">
+          <option value="Azerbaijani"></option>
+          <option value="Armenian"></option>
+          <option value="Belarusian"></option>
+          <option value="Kazakh"></option>
+          <option value="Moldovan"></option>
+          <option value="Russian"></option>
+          <option value="Tajik"></option>
+          <option value="Turkmen"></option>
+          <option value="Uzbek"></option>
+          <option value="Ukrainian"></option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>City</legend>
+        <select name="City" id="City">
+          <option value="Astana">Astana</option>
+          <option value="Almaty">Almaty</option>
+          <option value="Other">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Attach a photo</legend>
+        <input type="file" multiple />
+      </fieldset>
+      <button style="background-color: rgba(0, 128, 0, 0.527); width: 100px;
+      text-align: center; margin-left: auto; margin-right: auto;" type="submit" form="Sign-up">Sign up</button>
+    </form>
+  </body>
+</html>

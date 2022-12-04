@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homework 2 page 2</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <style>
+      body {
+        background-color: rgba(0, 128, 0, 0.281);
+      }
+       fieldset {
+        background-color: white;
+        text-align: center;
+      }
+      form {
+        text-align: center;
+      }
+      .thesis {
+        margin-top: 16px;
+        text-align: right;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/register.html" aria-current="page">NEW PATIENT</a>
+    </nav>
+    <fieldset>
+      <h1>Sign in</h1>
+    </fieldset>
+    <p class="thesis">Enter your Username or Email Address</p>
+    <form action="/main.html" id="Login-form" method="get">
+      <fieldset>
+        <input
+        required
+        type="text"
+        inputmode="email"
+        name="Email"
+        placeholder="Username or Email (Required)"
+        /> <br>
+        <input
+        required
+        type="text"
+        inputmode="password"
+        name="Password"
+        placeholder="Password (Required)"
+        /> <br>
+        <a> <input type="checkbox" /> Privacy Policy </a> <br />
+        <button style="background-color: rgba(0, 128, 0, 0.527); width: 100px;
+        text-align: center; margin-left: auto; margin-right: auto;" type="submit" form="Login-form">Sign in</button>
+        <a href="/register.html">NEW PATIENT</a>
+      </fieldset>
+    </form>
+  </body>
+</html>
