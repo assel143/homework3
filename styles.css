@@ -114,15 +114,19 @@
     margin-left: 26%;
   }
 
-  .main .sidebar {
-    grid-area: aside;
-  }
-  .sidebar ul {
-    padding-left: 10;
+  .sidebar {
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    margin-left: 10px;
   }
 
-  .main .content {
-    grid-area: content;
+  main {
+    margin-left: 200px;
+  }
+
+  .sidebar ul {
+    padding-left: 10;
   }
 
   .content section:target {
