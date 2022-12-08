@@ -125,6 +125,6 @@
     padding-left: 10;
   }
 
-  .content section:target {
+  content section:target {
     outline: 2px dotted royalblue;
   }
